@@ -7,8 +7,8 @@ import { Person } from "./components/Person";
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Person />
+    <App />
+   
   </React.StrictMode>,
   document.getElementById("root")
 );
