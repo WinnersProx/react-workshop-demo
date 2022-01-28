@@ -1,43 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import axios from "axios";
-
-const ProductItem = () => {
-
-  const [products, setproduts] = useState([]);
-  
-
-  const getProduts = async () => {
-    const response = await axios
-
-      .get("https://fakestoreapi.com/products")
-
-      .catch((error) => {
-        console.log(error);
-      });
-
-    setproduts(response.data);
-  };
-
-  useEffect(() => {
-    getProduts();
-  }, []);
+import Card from "../UI/Card";
+import './productItem.css'
 
 
-
-  const renderProducts = products.map((product) => {
-
-    console.log(product);
-    const { id, title, price, description, image } = product;
-return(
-    <div key={id}> {title} </div>
-)
-  ;
-  });
-
-  return <Fragment>
-      {renderProducts}
-  </Fragment>;
+const ProductItem = ({ id, title, price, description, image }) => {
+  return (
+    <Card>
+      <div className="card-content">
+        <img src={image} />
+        <div className="card-body">
+          <h3>{title} h3</h3>
+          <p>{description} </p>
+          <h3>${price} </h3>
+        </div>
+        <div className="card-button">
+          <button type="button">Edit</button>
+          <button type="button">delete</button>
+        </div>
+      </div>
+    </Card>
+  );
 };
 
 export default ProductItem;
