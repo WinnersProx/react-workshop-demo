@@ -12,6 +12,7 @@
 }
 .card-content .card-button{
     
-    bottom: 0;
-    border: 1px solid red;
+   display: flex;
+   justify-content: space-around;
+   
 }

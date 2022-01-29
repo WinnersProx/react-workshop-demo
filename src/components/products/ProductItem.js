@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import axios from "axios";
 import Card from "../UI/Card";
 import './productItem.css'
+import Button from "../UI/Button";
 
 
 const ProductItem = ({ id, title, price, description, image }) => {
@@ -63,6 +64,11 @@ console.log(productId)
           <h3>${price} </h3>
         </div>
         <div className="card-button">
+
+
+            {/* <Button onClick={() => editProduct(productId) }  >Edit</Button>
+            <Button onClick={() => deleteProduct(productId) }  >Delete</Button> */}
+
           <button type="button" onClick={() => editProduct(productId) }>Edit</button>
           <button type="button" onClick={() => deleteProduct(productId) }>delete</button>
         </div>
