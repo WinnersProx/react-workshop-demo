@@ -1,5 +1,6 @@
 
 import './App.css';
+import ProductDetails from './components/products/productsDetails/ProductDetails';
 import ProdutLists from './components/products/ProdutLists';
 
 function App() {
@@ -7,6 +8,8 @@ function App() {
     <div className="App">
       
        <ProdutLists/>
+       
+       {/* <ProductDetails/> */}
     </div>
   );
 }

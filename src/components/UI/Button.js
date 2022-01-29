@@ -3,10 +3,10 @@ import'./button.css'
 
 function Button(props
 ) {
-  return <div>
-      <button>{props.children}
-      </button>
-  </div>;
+  return 
+      <Button>{props.children}
+      </Button>
+  ;
 }
 
 export default Button;

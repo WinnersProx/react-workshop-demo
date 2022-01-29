@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Fragment } from "react";
 import axios from "axios";
 
-import ProductItem from "./ProductItem";
+import ProductCard from "./ProductCard";
 import'./products.css'
 
 const ProdutLists = () => {
@@ -27,7 +27,7 @@ const ProdutLists = () => {
   const renderProducts = products.map((product) => {
     const { id, title, price, description, image } = product;
     
-  return(<ProductItem
+  return(<ProductCard
     key={id}
     id={id}
     title={title}
@@ -37,18 +37,25 @@ const ProdutLists = () => {
   />);  
   });
 
-  return (
+  return products.length <= 0 ? (
+    <div className="loader"
+                        role="status" id="loading">
+                       <span className="">Loading...</span>
+                   </div>
+  ):(
 
 
   <Fragment>
     <div className="products-container">
-    {renderProducts}
+
+    {  renderProducts}
+
     </div>
     
     
     </Fragment>
   
-  );
+  )
 };
 
 export default ProdutLists;
