@@ -1,0 +1,28 @@
+
+.card {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 1px;
+    border-radius: 20px;
+    background-color: rgb(207, 240, 240);
+    font-family: "Commissioner", sans-serif;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 15px ;
+
+   
+  }
+  .card::after{
+    content: "";
+    height: 40%;
+    top: 0;
+    width: 100%;
+    background-color:#fff;
+    opacity: 1;
+    border-radius: 20px 20px 0 0;
+    position: absolute;
+    left: 0;
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }

@@ -1,0 +1,41 @@
+.product-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background-color: seashell;
+ padding:6rem;
+}
+
+.product-detail{
+  display: flex;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 1px;
+  border-radius: 20px;
+ background-color: white;
+  font-family: "Commissioner", sans-serif;
+  width: 60%;
+ 
+  
+}
+.detail-right .image img{
+  height: 400px;
+  padding: 1rem;
+}
+.detail-right .ratings span{
+margin-right: 1rem;
+}
+.detail-left{
+padding: 1rem;
+
+}
+.detail-left .title{
+  margin: 1rem;
+}
+.product-description{
+  margin: 3rem;
+}
+.button {
+
+ margin-top: 2rem;
+}

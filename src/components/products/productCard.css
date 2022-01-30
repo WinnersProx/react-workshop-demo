@@ -1,0 +1,100 @@
+.card-content {
+
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+
+}
+
+.card-content .image {
+
+  height: 50%;
+  width: 50%;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.card-content .image img {
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+
+}
+
+.card-body {
+
+  margin: 1rem;
+
+  width: 18rem;
+  height: 30%;
+  padding: 10px;
+
+}
+
+.card-content h3 {
+
+  font-size: 13px;
+  margin: 5px;
+
+}
+
+.card-content p {
+
+  font-size: 10px;
+}
+
+.card-content .card-button {
+
+  width: 18rem;
+
+
+  position: absolute;
+
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.card-content .share {
+
+  position: absolute;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+  top: 10px;
+  right: 10px;
+
+}
+
+.card-content .share span {
+
+  color: black;
+  margin-top: 10px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+}
+
+.card-content .share span:hover {
+
+  opacity: 2;
+
+}
+
+.card-content .share span img {
+
+  height: 1.5rem;
+  width: 1.5rem;
+  
+}
