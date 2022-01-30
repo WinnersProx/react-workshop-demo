@@ -1,16 +1,22 @@
+import "./App.css";
 
-import './App.css';
-import ProductDetails from './components/products/productsDetails/ProductDetails';
-import ProdutLists from './components/products/ProdutLists';
+import ProdutLists from "./components/products/ProdutLists";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Newpage from "./components/products/productsDetails/Newpage";
 
 function App() {
+
   return (
-    <div className="App">
-      
-       <ProdutLists/>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<ProdutLists />} />
+          <Route exact path="/newpage/:productId" element={<Newpage />} />
+        </Routes>
+
        
-       {/* <ProductDetails/> */}
-    </div>
+      </div>
+    </Router>
   );
 }
 

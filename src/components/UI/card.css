@@ -1,7 +1,7 @@
 
 .card {
     padding: 1rem;
- 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 1px;
     border-radius: 20px;
     background-color: rgb(207, 240, 240);
     font-family: "Commissioner", sans-serif;

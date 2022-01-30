@@ -9,6 +9,8 @@ const ProdutLists = () => {
   const [products, setproduts] = useState([]);
 
   const getProduts = async () => {
+
+
     const response = await axios
 
       .get("https://fakestoreapi.com/products")
@@ -18,6 +20,7 @@ const ProdutLists = () => {
       });
 
     setproduts(response.data);
+    
   };
 
   useEffect(() => {
